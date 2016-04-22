@@ -21,9 +21,15 @@
 
 /* media queries custom */
 @media only screen and (min-width: 768px){
-    .socialdemo {
-        padding: 40% 0 !important;
+    .socialdemo { /* to align social icons on myStory page */
+    	padding: 40% 0 !important;
     }
+		.port-thumb-featured{
+		  height: 360px !important;
+		}
+		.port-thumb{
+			height: 200px !important;
+		}
 }
 @media only screen and (min-width: 992px){
     .socialdemo {
@@ -141,22 +147,21 @@ footer a:focus{
 	padding: 5% 0%;
 }
 .port-thumb-featured{
-      margin-top: 20px;
-      padding: 0px;
-	width: 100%;
-      height: 360px;
-      background-color: #a9a9a9;
-      border: 5px solid #fff;
+	margin-top: 20px;
+  padding: 0px;
+	//width: 100%;
+  height: 260px;
+  background-color: #a9a9a9;
+  border: 10px solid #fff;
 }
 .port-thumb-featured img{
 	width: 100%;
-	height: 100%;
 }
 .port-thumb{
 	padding: 0px;
-      height: 200px;
-      background-color: #d3d3d3;
-      border: 10px solid #fff;
+	height: 140px;
+  background-color: #d3d3d3;
+  border: 10px solid #fff;
 }
 /* .trying to get the main image stable in background
 .upload-kasun{

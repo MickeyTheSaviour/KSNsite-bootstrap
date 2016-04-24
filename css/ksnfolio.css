@@ -4,6 +4,19 @@
  */
 
 /* overriding bootstrap default classes */
+.carousel-caption{
+	position:absolute;
+	left: 5%;
+	z-index: 10;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	//color: #263238;
+	text-align: left;
+}
+.h1, h1{
+	padding-bottom:9px;
+	margin: 40px 0 20px;
+}
 .navbar-default .navbar-toggle{
 	border-color: transparent;
 }
@@ -13,45 +26,14 @@
 .navbar-default .navbar-toggle .icon-bar{
 	background-color: #2196f3;
 }
-.h1, h1{
-	padding-bottom:9px;
-	margin: 40px 0 20px;
-}
 /* /overriding bootstrap default classes */
 
-/* media queries custom */
-@media only screen and (min-width: 768px){
-    .socialdemo { /* to align social icons on myStory page */
-    	padding: 40% 0 !important;
-    }
-		.port-thumb-featured{
-		  height: 360px !important;
-		}
-		.port-thumb{
-			height: 200px !important;
-		}
-}
-@media only screen and (min-width: 992px){
-    .socialdemo {
-        padding: 30% 0 !important;
-    }
-}
-@media only screen and (min-width: 1200px){
-    .socialdemo {
-        padding: 20% 0 !important;
-    }
-    .content-body{
-          min-height: 760px;
-    }
-}
-/* /overriding bootstrap default media queries */
-
-body{
+*{
 	font-family: 'Lato', sans-serif ;
-	/*font-size: 1.4em;*/
+	font-size: 16px;
 }
 footer{
-      margin-top: 50px;
+	margin-top: 50px;
 	position: absolute;
 	padding-bottom: 0;
 	//bottom: 0 ;
@@ -133,9 +115,40 @@ footer a:focus{
 	text-align: left;
 }
 #top-positioning-content{
-      position: relative;
-      top: 130px;
-      height: 100%;
+	position: relative;
+	top: 130px;
+	height: 100%;
+}
+#contact{
+	padding: 50px 0;
+}
+#contact input, textarea{
+	margin-top: 30px;
+	height: auto;
+	width: 100%;
+	padding: 20px 20px !important;
+}
+#contact textarea{
+	max-height: 400px;
+	max-width: 100%;
+}
+#contact button, button:active{
+	font-size: 1.6rem;
+	padding: 1em 1.5em;
+	background: none;
+	color:#2196f3;
+	border-radius: 0;
+	border-left-style: none;
+  border-right-style: none;
+  outline: none;
+  box-shadow: none;
+}
+#contact button:hover{
+	border-bottom:2px solid #2196f3;
+}
+#contact button:focus{
+	color: #2196f3;
+	border-bottom:2px solid #2196f3;
 }
 /* /custom id styling */
 /* custom classes */
@@ -176,13 +189,31 @@ footer a:focus{
 }
  /.trying to get the main image stable in background */
 
-.carousel-caption{
-	position:absolute;
-	left: 5%;
-	z-index: 10;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	//color: #263238;
-	text-align: left;
-}
 /* /custom classes */
+
+/* media queries custom */
+@media only screen and (min-width: 768px){
+  .socialdemo { /* to align social icons on myStory page */
+  	padding: 40% 0 !important;
+  }
+	.port-thumb-featured{
+	  height: 360px !important;
+	}
+	.port-thumb{
+		height: 200px !important;
+	}
+}
+@media only screen and (min-width: 992px){
+  .socialdemo {
+    padding: 30% 0 !important;
+  }
+}
+@media only screen and (min-width: 1200px){
+  .socialdemo {
+    padding: 20% 0 !important;
+  }
+  .content-body{
+    min-height: 760px;
+  }
+}
+/* /overriding bootstrap default media queries */
